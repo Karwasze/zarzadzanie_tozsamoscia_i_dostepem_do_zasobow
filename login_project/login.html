@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login page</title>
+  <!-- Importujemy style CSS -->
+  <link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+
+<body>
+
+  <main id="main-holder">
+    <h1 id="login-header">Login page</h1>
+    <!-- Formularz logowania -->
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Log in" id="login-form-submit">
+    </form>
+    <!-- Potrzebujemy obiektu html błędu, aby go wyświetlać, kod w js zmienia tylko jego opacity aby stał się widoczny-->
+    <h1 id="login-error-msg">Login failed, try again in a few minutes</h1>
+    <!-- Umieszczamy blok <script> po innych komponentach w body, aby formularz logowania był dostępny -->
+    <script src="login.js"></script>
+  </main>
+</body>
+</html>
