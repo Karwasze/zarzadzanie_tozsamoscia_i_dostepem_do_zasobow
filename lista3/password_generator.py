@@ -13,7 +13,6 @@ def generate_password():
         and 30% of special characters.
         """
         chosen_list = random.randint(0,10)
-        print(chosen_list)
         if chosen_list >= 0 and chosen_list < 6:
             result_table.append(random.choice(LETTERS))
         elif chosen_list >= 6 and chosen_list < 8:
